@@ -17,7 +17,7 @@ public class StudentService {
 		students.add(new Student(1, "aaa", 1, 11));
 		students.add(new Student(2, "bbb", 2, 22));
 		students.add(new Student(3, "ccc",3, 33));
-		students.add(new Student(4, "ddd", 4, 44));
+		students.add(new Student(4, "ddd",4, 44));
 	}
 	
 	
@@ -37,7 +37,11 @@ public class StudentService {
 
 		return student;
 	}
+	public void addStudent(Student student) {
+		students.add(student);
+		System.out.println("added a student "+ student.getName());
 
+	}
 }
 
  
